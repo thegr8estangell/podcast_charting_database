@@ -116,7 +116,6 @@ NEWS_SHOWS = [
     "ben shapiro", "the ben shapiro show",
     "mark levin", "the mark levin show",
     "verdict with ted cruz", "ted cruz",
-    "american history tellers", "american scandal",
     "the big picture", "inflection with andrea mitchell",
     "the clay travis and buck sexton show", "2 pros and a cup of joe",
     "breaking points with krystal and saagar",
@@ -135,7 +134,7 @@ HEALTH_SHOWS = [
 ]
 
 TRUE_CRIME_SHOWS = [
-    "crime junkie", "dr death", "dr. death", "dirty john",
+    "dr death", "dr. death", "dirty john",
     "over my dead body", "blood ties", "even the rich",
     "betrayal", "betrayal podcast", "your own backyard",
     "scam goddess", "the cold", "something was wrong",
