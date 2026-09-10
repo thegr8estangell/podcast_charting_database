@@ -2,12 +2,11 @@ name: Daily Chart Scrape
 
 on:
   schedule:
-    # Runs once a day at 09:00 UTC — adjust to whenever charts refresh
     - cron: "0 9 * * *"
-  workflow_dispatch: {}   # lets you also trigger it manually from the Actions tab
+  workflow_dispatch: {}
 
 permissions:
-  contents: write   # needed so the final step can push chart_history.db back
+  contents: write
 
 jobs:
   scrape:
@@ -30,7 +29,6 @@ jobs:
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-          # add other scraper secrets here as needed
 
       - name: Commit updated database
         run: |
